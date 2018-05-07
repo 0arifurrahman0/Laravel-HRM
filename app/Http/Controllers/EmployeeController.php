@@ -24,8 +24,6 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        // dd(Employee::find(1)->employeeDepartment());
-        // die();
         $employees = Employee::all();
         return view('hrm.employee.index', compact('employees'));
     }
